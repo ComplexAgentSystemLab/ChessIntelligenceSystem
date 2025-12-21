@@ -3,9 +3,9 @@ name = "ChessIntelligenceSystem"
 version = "0.0.1"
 description = "多棋类AI推理与训练系统，基于PyTorch，支持标准化HTTP API。"
 authors = [
-    {name = "Yee Cube", email = ""}
+    {name = "Yee Cube", email = "yee.cube@example.com"}
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "torch",
     "numpy",
@@ -15,13 +15,15 @@ dependencies = [
     "uvicorn",
     "pydantic",
     "python-multipart",
-    "aiofiles"
+    "aiofiles",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
-    "httpx"
+    "httpx",
+    # pytest anyio 支持
+    "anyio",
 ]
 
 [build-system]
