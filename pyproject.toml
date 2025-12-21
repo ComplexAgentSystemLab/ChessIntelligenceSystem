@@ -1,0 +1,29 @@
+[project]
+name = "ChessIntelligenceSystem"
+version = "0.0.1"
+description = "多棋类AI推理与训练系统，基于PyTorch，支持标准化HTTP API。"
+authors = [
+    {name = "Yee Cube", email = ""}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "torch",
+    "numpy",
+    "scipy",
+    "pandas",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "python-multipart",
+    "aiofiles"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
