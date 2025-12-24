@@ -1,7 +1,7 @@
 import pytest
 import httpx
 
-from chess_intelligent_system.api.app import create_app
+from chess_intelligence_system.api.app import create_app
 
 
 @pytest.mark.anyio

@@ -3,7 +3,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from chess_intelligent_system.api.models import (
+from chess_intelligence_system.api.models import (
     AiErrEnvelope,
     AiOkEnvelope,
     AiRequestEnvelope,
@@ -11,11 +11,11 @@ from chess_intelligent_system.api.models import (
     ChessAiThinkRequest,
     ChessAiThinkResponse,
 )
-from chess_intelligent_system.core.chess_engine import think_best_move
+from chess_intelligence_system.core.chess_engine import think_best_move
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="ChessIntelligentSystem", version="0.0.1")
+    app = FastAPI(title="ChessIntelligenceSystem", version="0.0.1")
 
     # 允许前端 Vite/React 在开发时跨域访问
     app.add_middleware(

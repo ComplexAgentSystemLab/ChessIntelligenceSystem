@@ -1,4 +1,4 @@
-"""ChessIntelligentSystem
+"""ChessIntelligenceSystem
 
 最小可运行 HTTP API（FastAPI）实现，用于与前端 chess-games-react 联调。
 
